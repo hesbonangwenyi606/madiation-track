@@ -15,11 +15,7 @@ This project is built to be fast, scalable, and easy to extend — ideal for tra
 
 🧹 ESLint setup with recommended rules
 
-📁 Clean file & folder structure
-
-🚀 Ready for deployment (Netlify, Vercel, or any static host)
-
-📂 Project Structure
+## Project Structure
 madiation-track/
 ├── public/
 ├── src/
@@ -40,7 +36,7 @@ madiation-track/
 ├── tsconfig.node.json
 └── vite.config.ts
 
-🔧 Tech Stack
+## Tech Stack
 Tool	Purpose
 React	UI development
 TypeScript	Strong typing
