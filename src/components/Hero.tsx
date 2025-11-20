@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface HeroProps {
   onStartMeditating: () => void;
@@ -9,13 +9,33 @@ export const Hero: React.FC<HeroProps> = ({
   onStartMeditating,
   onExploreSessions,
 }) => {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const [offsetY, setOffsetY] = useState(0);
+
+  // Update scroll offset
+  useEffect(() => {
+    const handleScroll = () => {
+      if (heroRef.current) {
+        const rect = heroRef.current.getBoundingClientRect();
+        setOffsetY(rect.top * 0.3); // Adjust parallax strength here
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden mb-12">
-      {/* Background Image */}
+    <div
+      ref={heroRef}
+      className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden mb-12"
+    >
+      {/* Parallax Background Image */}
       <img
         src="https://d64gsuwffb70l.cloudfront.net/691f6d268b5a2e2ea13682d4_1763667333214_dd4d759e.webp"
         alt="Peaceful meditation"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-0"
+        style={{ transform: `translateY(${offsetY}px)` }}
         loading="lazy"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-purple-900/70"></div>
