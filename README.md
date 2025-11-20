@@ -1,5 +1,4 @@
-🧘‍♂️ madiation-track
-
+### madiation-track
 A modern React + TypeScript + Vite application styled with TailwindCSS.
 This project is built to be fast, scalable, and easy to extend — ideal for tracking meditation sessions or building any wellness-related dashboard.
 
@@ -45,20 +44,16 @@ ESLint	Code quality and linting
 
 ## Installation
 Make sure you have Node.js 16+ installed.
-
 git clone https://github.com/your-username/madiation-track.git
 cd madiation-track
 npm install
 
 ## Development Server
-
 Start the app locally:
-
 npm run dev
 
 
 Default URL:
-
 http://localhost:5173
 
 ## Build for Production
@@ -66,33 +61,24 @@ npm run build
 
 ## Preview Production Build
 npm run preview
+
 ## Styling (TailwindCSS)
-
 Tailwind config file:
-
 tailwind.config.ts
-
-
 Main CSS entry:
-
 src/index.css
 
-
-Example usage:
-
+**Example usage:**
 <div className="p-4 bg-blue-500 text-white rounded-xl">
   Hello Meditation Tracker
 </div>
 
 ## Creating Components
-
 Add components inside:
-
 src/components/
 
 
-Example component:
-
+**Example component:**
 export const Card = () => {
   return (
     <div className="p-4 rounded-lg shadow bg-white">
@@ -102,7 +88,5 @@ export const Card = () => {
 };
 
 ## Linting
-
 Run the linter:
-
 npm run lint
