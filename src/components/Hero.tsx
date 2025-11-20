@@ -22,23 +22,23 @@ export const Hero: React.FC<HeroProps> = ({
 
       {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-        {/* Pulsing Circle */}
-        <div className="mb-8">
+        {/* Pulsing & Floating Circle */}
+        <div className="mb-8 animate-float">
           <div className="w-32 h-32 mx-auto rounded-full border-4 border-white/30 flex items-center justify-center animate-pulse">
             <div className="w-24 h-24 rounded-full border-4 border-white/50"></div>
           </div>
         </div>
 
         {/* Heading & Description */}
-        <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 font-serif">
+        <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 font-serif animate-float-slow">
           Find Your Inner Peace
         </h1>
-        <p className="text-lg md:text-2xl text-indigo-100 mb-8 max-w-2xl">
+        <p className="text-lg md:text-2xl text-indigo-100 mb-8 max-w-2xl animate-float-slower">
           Guided meditations for sleep, focus, anxiety relief, and gratitude
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4 animate-float-slower">
           <button
             onClick={onStartMeditating}
             className="bg-white text-indigo-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-indigo-50 transition-all hover:scale-105 shadow-xl"
