@@ -47,15 +47,15 @@ TypeScript	Strong typing
 Vite	Build tool & dev server
 TailwindCSS	Utility-first styling
 ESLint	Code quality and linting
-📦 Installation
 
+## Installation
 Make sure you have Node.js 16+ installed.
 
 git clone https://github.com/your-username/madiation-track.git
 cd madiation-track
 npm install
 
-▶️ Development Server
+## Development Server
 
 Start the app locally:
 
@@ -66,13 +66,12 @@ Default URL:
 
 http://localhost:5173
 
-🏗️ Build for Production
+## Build for Production
 npm run build
 
-🔍 Preview Production Build
+## Preview Production Build
 npm run preview
-
-🎨 Styling (TailwindCSS)
+## Styling (TailwindCSS)
 
 Tailwind config file:
 
@@ -90,7 +89,7 @@ Example usage:
   Hello Meditation Tracker
 </div>
 
-🧩 Creating Components
+## Creating Components
 
 Add components inside:
 
@@ -107,7 +106,7 @@ export const Card = () => {
   );
 };
 
-🛠 Linting
+## Linting
 
 Run the linter:
 
