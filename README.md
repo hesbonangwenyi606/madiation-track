@@ -3,17 +3,16 @@
 A modern React + TypeScript + Vite application styled with TailwindCSS.
 This project is built to be fast, scalable, and easy to extend — ideal for tracking meditation sessions or building any wellness-related dashboard.
 
-✨ Features
-
+### Features
 ⚛️ React + TypeScript
 
-⚡ Vite for lightning-fast dev environment
+**Vite for lightning-fast dev environment**
 
-🎨 TailwindCSS pre-configured
+**TailwindCSS pre-configured**
 
-🔄 Hot Module Replacement (HMR)
+**Hot Module Replacement (HMR)**
 
-🧹 ESLint setup with recommended rules
+**ESLint setup with recommended rules**
 
 ## Project Structure
 madiation-track/
